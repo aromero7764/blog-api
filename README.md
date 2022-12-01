@@ -9,3 +9,11 @@
 - Likes
 
 
+## Auth
+- Sing up /auth/register
+- Login /auth/login
+
+microservicios
+    - auth0
+    - redis
+arquitectura hexagonal
