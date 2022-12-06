@@ -29,3 +29,9 @@ const createUser = async (obj) => {
         id: uuid.v4()
     })
 }
+
+module.exports = {
+    findAllUsers,
+    findUserById,
+    createUser
+}
