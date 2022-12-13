@@ -17,3 +17,5 @@ microservicios
     - auth0
     - redis
 arquitectura hexagonal,.m      
+
+"desde la aplicacion web"
