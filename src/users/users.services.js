@@ -49,13 +49,13 @@ const postUser = (req, res) => {
         res.status(400).json({
           message: err.message,
           fields: {
-            first_name: 'string',
-            last_name: 'string',
-            user_name: 'string',
-            email: 'string',
-            password: 'string',
-            age: 'number',
-            country: 'MXN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         '
+            first_name: "string", 
+            last_name: "string",
+            user_name: "string",
+            email: "string",
+            password: "string",
+            age: "number",
+            country: "MXN",
           }
         })
       })

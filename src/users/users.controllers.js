@@ -11,13 +11,7 @@ const findUserById = async(id) => {
     const data = await Users.findOne({
         where:  {
             id: id,
-            first_name: obj.first_name,
-            last_name: obj.last_name,
-            user_name: obj.user_name,
-            email: obj. email,
-            password: hashPassword(obj.password),
-            age: obj.age,
-            country: obj.country
+       
 
         }
     })
@@ -26,12 +20,34 @@ const findUserById = async(id) => {
 
 const createUser = async (obj) => {
     const data = await Users.create({
-        id: uuid.v4()
+        id: uuid.v4(),
+        first_name: obj.first_name,
+        last_name: obj.last_name,
+        user_name: obj.user_name,
+        email: obj. email,
+        password: hashPassword(obj.password),
+        age: obj.age,
+        country: obj.country
+        
     })
+    return data
 }
+
+const findUserByemail = async(email) => {
+    const data = await Users.findOne({
+        where:  {
+            email: email,
+       
+
+        }
+    })
+        return data
+}
+
 
 module.exports = {
     findAllUsers,
     findUserById,
-    createUser
+    createUser,
+    findUserByemail,
 }
